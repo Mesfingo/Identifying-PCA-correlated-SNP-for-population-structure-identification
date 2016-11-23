@@ -1,11 +1,10 @@
 # Function arguments:
 1. gdata :- the genotype data (individual x SNP) with the genotypes coded as {-1, 0, 1}. The SNP columns should be named.
-            It is recommended that missing genotypes be imputed. The imputation in an other repository in this accoung 
-            (R-code-for-missing-genotype-imputation) may be used for that purpose. The genotype data should only be composed 
+            Missing genotypes should be imputed. The imputation function in an other repository in this accoung (R-code-for
+            -missing-genotype-imputation) may be used for that purpose. The genotype data should only be composed 
             of columns with genotype data (no individual ID, or other info)
 2. tp :-    Intiger for the number of principal components to use. 
 3. ts :-    Intiger for the number of top snp to return.      
-
 
 function(gdata, tp, ts){
 
@@ -13,7 +12,7 @@ function(gdata, tp, ts){
 gdata_svd <- svd(gdata)
 
 # for all of the right singular vectors calculate 'p' by squaring and then summing over 'tp' columns
-p <- rowSums((pop1_svd$v[, c(1:tp), drop = F] ) ^ 2)
+p <- rowSums((gdata_svd$v[, c(1:tp), drop = F] ) ^ 2)
 
 # get names of top 'ts' SNP of genotype matrix based on ordering of the value 'p'
 return(colnames(gdata[, c(order(p, decreasing = T))])[1:ts])
