@@ -6,7 +6,6 @@ The R code is an implementation of a method described by Paschou et al in a seri
 Lewis, J. et al., 2011. Tracing Cattle Breeds with Principal Components Analysis Ancestry Informative SNPs. , 6(4).
 
 Paschou, P. et al., 2010. Ancestry informative markers for fine-scale individual assignment to worldwide populations. Journal of Medical 
-
 Genetics, 47(12), pp.835–847.
 
 Paschou, P. et al., 2007. PCA-Correlated SNPs for Structure Identification in Worldwide Human Populations. PLoS Genetics, 3(9).
