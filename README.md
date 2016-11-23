@@ -8,7 +8,8 @@ Lewis, J. et al., 2011. Tracing Cattle Breeds with Principal Components Analysis
 Paschou, P. et al., 2010. Ancestry informative markers for fine-scale individual assignment to worldwide populations. Journal of Medical 
 Genetics, 47(12), pp.835–847.
 
+Paschou, P. et al., 2008. Tracing Sub-Structure in the European American Population with PCA-Informative Markers. PLoS Genetics, 4(7).
 Paschou, P. et al., 2007. PCA-Correlated SNPs for Structure Identification in Worldwide Human Populations. PLoS Genetics, 3(9).
 
-Paschou, P. et al., 2008. Tracing Sub-Structure in the European American Population with PCA-Informative Markers. PLoS Genetics, 4(7).
+
 
