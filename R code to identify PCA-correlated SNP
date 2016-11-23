@@ -1,0 +1,11 @@
+# Function arguments:
+1. gdata :- the genotype data with the genotypes coded as {-1, 0, 1}. It is recommended that missing genotypes be imputed. 
+            The imputation in an other repository in this accoung may be used for that purpose. 
+
+pop1_svd <- svd(pop1)
+
+# for all of the right singular vectors, square and then sum over two columns (assuming two principal comonents)
+p <- rowSums((pop1_svd$v[, c(1), drop = F] ) ^ 2)
+
+# get order of the columns (SNP) of genotype matrix based on ordering of the value 'p'
+colnames(pop1[, c(order(p, decreasing = T))])[1:10]
