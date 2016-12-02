@@ -14,6 +14,7 @@ gdata_svd <- svd(gdata)
 # for all of the right singular vectors calculate 'p' by squaring and then summing over 'tp' columns
 p <- rowSums((gdata_svd$v[, c(1:tp), drop = F] ) ^ 2)
 
-# get names of top 'ts' SNP of genotype matrix based on ordering of the value 'p'
+# get names of top 'ts' SNP of the genotype matrix based on ordering of the value 'p'
 return(colnames(gdata[, c(order(p, decreasing = T))])[1:ts])
 }
+
