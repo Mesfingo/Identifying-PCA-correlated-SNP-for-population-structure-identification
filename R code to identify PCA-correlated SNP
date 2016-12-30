@@ -8,6 +8,9 @@
 
 function(gdata, tp, ts){
 
+# apply standardization
+gdata2 <- apply(gdata, 2, function(x){(x-mean(x))/sd(x)})
+
 # perform SVD
 gdata_svd <- svd(gdata)
 
