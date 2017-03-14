@@ -21,4 +21,4 @@ p <- rowSums((gdata_svd$v[, c(1:tp), drop = F] ) ^ 2)
 return(colnames(gdata[, c(order(p, decreasing = T))])[1:ts])
 }
 
-# I will include an example with simulated data soon. 
+# I will try to include an example with simulated in the near future
